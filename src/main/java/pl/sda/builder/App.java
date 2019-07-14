@@ -1,13 +1,14 @@
 package pl.sda.builder;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ){
+        User user = new User.Builder()
+                .name("TEST")
+                .lastName("Test2")
+                .city("Wrocław")
+                . password("noewh").build();
+        System.out.println(user);
     }
 }
